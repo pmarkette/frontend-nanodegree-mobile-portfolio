@@ -1,0 +1,15 @@
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "max-age=600
+ExpiresByType image/jpeg "max-age=600
+ExpiresByType image/gif "max-age=600
+ExpiresByType image/png "max-age=600"
+ExpiresByType text/css "max-age=600"
+ExpiresByType application/pdf "access plus 1 month"
+ExpiresByType text/x-javascript "max-age=600"
+ExpiresByType application/x-shockwave-flash "access plus 1 month"
+ExpiresByType image/x-icon "access plus 1 year"
+ExpiresDefault "access plus 2 days"
+</IfModule>
+## EXPIRES CACHING ##
