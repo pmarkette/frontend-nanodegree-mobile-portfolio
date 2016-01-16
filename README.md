@@ -17,6 +17,8 @@ I eliminated render-blocking CSS by putting it inline.
 
 I eliminated render-blocking javascript by making it asynchronous.
 
+I prevented the unneccessary loading of print.css by marking it with a media query.
+
 
 ####Part 2: Optimize Frames per Second in pizza.html
 
