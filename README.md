@@ -10,7 +10,12 @@ My challenge was to optimize this online portfolio for speed. In particular, I n
 To optimize index.html I took the following measures:
 
 I optimized the pizzeria image by reducing it's size and running it through a compressor.
-I created a tiny thumbnail of the pizzeria image
+
+I created a tiny thumbnail of the pizzeria image.
+
+I eliminated render-blocking CSS by putting it inline.
+
+I eliminated render-blocking javascript by making it asynchronous.
 
 
 ####Part 2: Optimize Frames per Second in pizza.html
@@ -20,9 +25,14 @@ To optimize views/pizza.html I needed to modify views/js/main.js until the frame
 Here are the measures that I took to achieve this:
 
 I enabled strict mode on all functions.
+
 I used the document.getElementById() Web API call instead of the slower document.querySelector().
+
 I used document.getElementsByClassName() Web API call instead of the slower document.querySelectorAll().
-There was a for loop that evaluated an array lenght propery as part of the conditonal statement. I made it a local variable to increase the efficiency of the loop.
+
+There was a for loop that evaluated an array length property as part of the conditonal statement. I made it a local variable to increase the efficiency of the loop.
+
 When possible I moved Web API calls out of loops and put them into local variables.
+
 I reduced the number of pizzas by making it a function of the screen height.
 
