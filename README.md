@@ -5,7 +5,7 @@
 My challenge was to optimize this online portfolio for speed. In particular, I needed to optimize the critical rendering path and make this page render as quickly as possible by applying the techniques I've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
 
 
-####Part Optimize index.html to achieve a score of at least 90 in [Pagespeed Insights](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fpmarkette.github.io%2Ffrontend-nanodegree-mobile-portfolio).
+####Part 1: Optimize index.html to achieve a score of at least 90 in [Pagespeed Insights](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fpmarkette.github.io%2Ffrontend-nanodegree-mobile-portfolio).
 
 To optimize index.html I took the following measures:
 
