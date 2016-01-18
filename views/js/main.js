@@ -506,7 +506,7 @@ window.performance.mark("mark_start_generating"); // collect timing data
 
 // This for-loop actually creates and appends all of the pizzas when the page loads
 var pizzasDiv = document.getElementById("randomPizzas"); //moved this variable outside the loop
-for (var i = 2; i < 50; i++) {
+for (var i = 2; i < 100; i++) {
     pizzasDiv.appendChild(pizzaElementGenerator(i));
 }
 
@@ -574,7 +574,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var s = 256;
   var elem; //moved outside the loop
   var movingPizzas = document.getElementById('movingPizzas1'); //replaced document.querySelector(), moved outside the loop
-  for (var i = 0; i < 24; i++) { //reduced the number of pizzas by making it a function of the screen height
+  for (var i = 0; i < numPizzas; i++) { //reduced the number of pizzas by making it a function of the screen height
     elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
