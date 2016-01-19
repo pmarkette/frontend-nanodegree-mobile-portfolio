@@ -42,5 +42,7 @@ There was a for loop that evaluated an array length property as part of the cond
 
 When possible I moved Web API calls out of loops and put them into local variables.
 
+I reduced the amount of times that the DOM is accessed by caching a DOM element in a local variable.
+
 I reduced the number of pizzas by making it a function of the screen height.
 

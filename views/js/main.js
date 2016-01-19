@@ -484,12 +484,12 @@ var resizePizzas = function(size) {
   function changePizzaSizes(size) {
   // Function-level strict mode syntax
   'use strict';
-    var len = document.getElementsByClassName('randomPizzaContainer').length; //saved the array length in a local variable, //replaced document.querySelectorAll
     var container =  document.getElementsByClassName('randomPizzaContainer'); //moved document.getElementsByClassName('randomPizzaContainer') outside the loop
-    var dx = determineDx(document.getElementsByClassName('randomPizzaContainer')[0], size); //replaced document.querySelectorAll, made this a local variable 
-    var newwidth = (document.getElementsByClassName('randomPizzaContainer')[0].offsetWidth + dx) + 'px'; //replaced document.querySelectorAll, made this a local variable
+    var len = container.length; //saved the array length in a local variable, replaced document.querySelectorAll, used the DOM element cached in container 
+    var dx = determineDx(container[0], size); //replaced document.querySelectorAll, made this a local variable, used the DOM element cached in container 
+    var newwidth = (container[0].offsetWidth + dx) + 'px'; //replaced document.querySelectorAll, made this a local variable, used the DOM element cached in container
     for (var i = 0; i < len; i++) {
-      container[i].style.width = newwidth;
+      container[i].style.width = newwidth; //Used the DOM element cached in container
     }
   }
 
