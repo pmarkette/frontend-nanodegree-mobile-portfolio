@@ -548,7 +548,7 @@ function updatePositions() {
   var phase; //moved this outside the loop
   for (var i = 0; i < len; i++) { 
     phase = Math.sin(top + i % 5);
-    items[i].style.transform = 'translateX(' + 100 * phase + 'px)'; //use hardware acceleration
+    items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
   }
 
   // User Timing API to the rescue again. Seriously, it's worth learning.
